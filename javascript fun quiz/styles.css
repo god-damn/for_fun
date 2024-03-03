@@ -1,0 +1,84 @@
+/* opensans 500 + 600 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&display=swap');
+
+body {
+  background-color: #fff687;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.quiz {
+  margin-top: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.quiz__list__item {
+  margin-bottom: 20px;
+ 
+}
+
+.quiz__list__item label span{
+  font-size: 22px;
+}
+
+
+
+button{
+  width: 100%;
+  font-size: 20px;
+  padding: 7px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(36,33,36,0.8);
+  color: #fff;
+}
+
+button:active{
+ opacity: 0.8;
+}
+
+.summary{
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.result{
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 279px){
+  .container{
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 300px){
+  .container{
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 800px){
+  .container{
+    max-width: 600px;
+  }
+}
