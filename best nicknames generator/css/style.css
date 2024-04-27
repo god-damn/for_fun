@@ -1,0 +1,79 @@
+/* monserrat 400 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+/* roboto 400 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.title {
+  font-size: 40px;
+}
+
+.description {
+  font-size: 25px;
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container-btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#outputNickname {
+  font-size: 30px;
+}
+
+#getNicknameBtn {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+
+  .container-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #outputNickname {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  #getNicknameBtn {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 74px;
+    right: 20%;
+  }
+
+}
