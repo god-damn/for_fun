@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter for guess rank game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="rank-container">
+        <button class="rank-btn">Выберите Ранг</button>
+        <div class="chosen-rank">
+          <div class="item-container" data-rank="radiant">
+            <img
+              class="item-container-img added"
+              src="img/radik.jpg"
+              alt="iron"
+            />
+            <p class="text added">Радик</p>
+          </div>
+        </div>
+        <button class="countBtn">Рассчитать</button>
+      </div>
+      <div class="choose-rank">
+        <div class="item-container" data-rank="iron">
+          <img
+            class="item-container-img"
+            src="img/iron.jpg"
+            alt="iron"
+            data-rank="iron"
+          />
+          <p data-rank="iron">Железо</p>
+        </div>
+        <div class="item-container" data-rank="bronze">
+          <img
+            class="item-container-img"
+            src="img/bronze.jpg"
+            alt="iron"
+            data-rank="bronze"
+          />
+          <p data-rank="bronze">Бронза</p>
+        </div>
+        <div class="item-container" data-rank="silver">
+          <img
+            class="item-container-img"
+            src="img/silver.jpg"
+            alt="iron"
+            data-rank="silver"
+          />
+          <p data-rank="silver">Серебро</p>
+        </div>
+        <div class="item-container" data-rank="gold">
+          <img
+            class="item-container-img"
+            src="img/gold.jpg"
+            alt="iron"
+            data-rank="gold"
+          />
+          <p data-rank="gold">Золото</p>
+        </div>
+        <div class="item-container" data-rank="plat">
+          <img
+            class="item-container-img"
+            src="img/plat.jpg"
+            alt="iron"
+            data-rank="plat"
+          />
+          <p data-rank="plat">Платина</p>
+        </div>
+        <div class="item-container" data-rank="diamond">
+          <img
+            class="item-container-img"
+            src="img/diamond.jpg"
+            alt="iron"
+            data-rank="diamond"
+          />
+          <p data-rank="diamond">Алмаз</p>
+        </div>
+        <div class="item-container" data-rank="asc">
+          <img
+            class="item-container-img"
+            src="img/asc.jpg"
+            alt="iron"
+            data-rank="asc"
+          />
+          <p data-rank="asc">Аскендант</p>
+        </div>
+        <div class="item-container" data-rank="immo">
+          <img
+            class="item-container-img"
+            src="img/imm.jpg"
+            alt="iron"
+            data-rank="immo"
+          />
+          <p data-rank="immo">Иммортал</p>
+        </div>
+        <div class="item-container" data-rank="radiant">
+          <img
+            class="item-container-img"
+            src="img/radik.jpg"
+            alt="iron"
+            data-rank="radiant"
+          />
+          <p data-rank="radiant">Радик</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <div class="alone-input-container">
+          <form class="player-one">
+            <input class="inptOne" type="text" placeholder="Игрок 1" />
+          </form>
+          <div class="name-container">
+            <p class="name-first-player"></p>
+            <p class="counter-player1"></p>
+          </div>
+          <button class="btnAnswerPlayer" onclick="addShow1()">
+            Ответ Игрока
+          </button>
+          <div class="choose-rank-first-player">
+            <div class="item-container" data-rank="iron">
+              <img
+                class="item-container-img"
+                src="img/iron.jpg"
+                alt="iron"
+                data-rank="iron"
+              />
+              <p data-rank="iron">Железо</p>
+            </div>
+            <div class="item-container" data-rank="bronze">
+              <img
+                class="item-container-img"
+                src="img/bronze.jpg"
+                alt="iron"
+                data-rank="bronze"
+              />
+              <p data-rank="bronze">Бронза</p>
+            </div>
+            <div class="item-container" data-rank="silver">
+              <img
+                class="item-container-img"
+                src="img/silver.jpg"
+                alt="iron"
+                data-rank="silver"
+              />
+              <p data-rank="silver">Серебро</p>
+            </div>
+            <div class="item-container" data-rank="gold">
+              <img
+                class="item-container-img"
+                src="img/gold.jpg"
+                alt="iron"
+                data-rank="gold"
+              />
+              <p data-rank="gold">Золото</p>
+            </div>
+            <div class="item-container" data-rank="plat">
+              <img
+                class="item-container-img"
+                src="img/plat.jpg"
+                alt="iron"
+                data-rank="plat"
+              />
+              <p data-rank="plat">Платина</p>
+            </div>
+            <div class="item-container" data-rank="diamond">
+              <img
+                class="item-container-img"
+                src="img/diamond.jpg"
+                alt="iron"
+                data-rank="diamond"
+              />
+              <p data-rank="diamond">Алмаз</p>
+            </div>
+            <div class="item-container" data-rank="asc">
+              <img
+                class="item-container-img"
+                src="img/asc.jpg"
+                alt="iron"
+                data-rank="asc"
+              />
+              <p data-rank="asc">Аскендант</p>
+            </div>
+            <div class="item-container" data-rank="immo">
+              <img
+                class="item-container-img"
+                src="img/imm.jpg"
+                alt="iron"
+                data-rank="immo"
+              />
+              <p data-rank="immo">Иммортал</p>
+            </div>
+            <div class="item-container" data-rank="radiant">
+              <img
+                class="item-container-img"
+                src="img/radik.jpg"
+                alt="iron"
+                data-rank="radiant"
+              />
+              <p data-rank="radiant">Радик</p>
+            </div>
+          </div>
+          <div class="chosen-rank-first-player"></div>
+        </div>
+        <div class="alone-input-container">
+          <form class="player-two">
+            <input class="inptTwo" type="text" placeholder="Игрок 2" />
+          </form>
+          <div class="name-container">
+            <p class="name-second-player"></p>
+            <p class="counter-player2"></p>
+          </div>
+          <button class="btnAnswerPlayer" onclick="addShow2()">
+            Ответ Игрока
+          </button>
+          <div class="choose-rank-second-player">
+            <div class="item-container" data-rank="iron">
+              <img
+                class="item-container-img"
+                src="img/iron.jpg"
+                alt="iron"
+                data-rank="iron"
+              />
+              <p data-rank="iron">Железо</p>
+            </div>
+            <div class="item-container" data-rank="bronze">
+              <img
+                class="item-container-img"
+                src="img/bronze.jpg"
+                alt="iron"
+                data-rank="bronze"
+              />
+              <p data-rank="bronze">Бронза</p>
+            </div>
+            <div class="item-container" data-rank="silver">
+              <img
+                class="item-container-img"
+                src="img/silver.jpg"
+                alt="iron"
+                data-rank="silver"
+              />
+              <p data-rank="silver">Серебро</p>
+            </div>
+            <div class="item-container" data-rank="gold">
+              <img
+                class="item-container-img"
+                src="img/gold.jpg"
+                alt="iron"
+                data-rank="gold"
+              />
+              <p data-rank="gold">Золото</p>
+            </div>
+            <div class="item-container" data-rank="plat">
+              <img
+                class="item-container-img"
+                src="img/plat.jpg"
+                alt="iron"
+                data-rank="plat"
+              />
+              <p data-rank="plat">Платина</p>
+            </div>
+            <div class="item-container" data-rank="diamond">
+              <img
+                class="item-container-img"
+                src="img/diamond.jpg"
+                alt="iron"
+                data-rank="diamond"
+              />
+              <p data-rank="diamond">Алмаз</p>
+            </div>
+            <div class="item-container" data-rank="asc">
+              <img
+                class="item-container-img"
+                src="img/asc.jpg"
+                alt="iron"
+                data-rank="asc"
+              />
+              <p data-rank="asc">Аскендант</p>
+            </div>
+            <div class="item-container" data-rank="immo">
+              <img
+                class="item-container-img"
+                src="img/imm.jpg"
+                alt="iron"
+                data-rank="immo"
+              />
+              <p data-rank="immo">Иммортал</p>
+            </div>
+            <div class="item-container" data-rank="radiant">
+              <img
+                class="item-container-img"
+                src="img/radik.jpg"
+                alt="iron"
+                data-rank="radiant"
+              />
+              <p data-rank="radiant">Радик</p>
+            </div>
+          </div>
+          <div class="choosen-rank-second-player"></div>
+        </div>
+        <div class="alone-input-container">
+          <form class="player-three">
+            <input class="inptThree" type="text" placeholder="Игрок 3" />
+          </form>
+          <div class="name-container">
+            <p class="name-third-player"></p>
+            <p class="counter-player3"></p>
+          </div>
+          <button class="btnAnswerPlayer" onclick="addShow3()">
+            Ответ Игрока
+          </button>
+          <div class="choose-rank-third-player">
+            <div class="item-container" data-rank="iron">
+              <img
+                class="item-container-img"
+                src="img/iron.jpg"
+                alt="iron"
+                data-rank="iron"
+              />
+              <p data-rank="iron">Железо</p>
+            </div>
+            <div class="item-container" data-rank="bronze">
+              <img
+                class="item-container-img"
+                src="img/bronze.jpg"
+                alt="iron"
+                data-rank="bronze"
+              />
+              <p data-rank="bronze">Бронза</p>
+            </div>
+            <div class="item-container" data-rank="silver">
+              <img
+                class="item-container-img"
+                src="img/silver.jpg"
+                alt="iron"
+                data-rank="silver"
+              />
+              <p data-rank="silver">Серебро</p>
+            </div>
+            <div class="item-container" data-rank="gold">
+              <img
+                class="item-container-img"
+                src="img/gold.jpg"
+                alt="iron"
+                data-rank="gold"
+              />
+              <p data-rank="gold">Золото</p>
+            </div>
+            <div class="item-container" data-rank="plat">
+              <img
+                class="item-container-img"
+                src="img/plat.jpg"
+                alt="iron"
+                data-rank="plat"
+              />
+              <p data-rank="plat">Платина</p>
+            </div>
+            <div class="item-container" data-rank="diamond">
+              <img
+                class="item-container-img"
+                src="img/diamond.jpg"
+                alt="iron"
+                data-rank="diamond"
+              />
+              <p data-rank="diamond">Алмаз</p>
+            </div>
+            <div class="item-container" data-rank="asc">
+              <img
+                class="item-container-img"
+                src="img/asc.jpg"
+                alt="iron"
+                data-rank="asc"
+              />
+              <p data-rank="asc">Аскендант</p>
+            </div>
+            <div class="item-container" data-rank="immo">
+              <img
+                class="item-container-img"
+                src="img/imm.jpg"
+                alt="iron"
+                data-rank="immo"
+              />
+              <p data-rank="immo">Иммортал</p>
+            </div>
+            <div class="item-container" data-rank="radiant">
+              <img
+                class="item-container-img"
+                src="img/radik.jpg"
+                alt="iron"
+                data-rank="radiant"
+              />
+              <p data-rank="radiant">Радик</p>
+            </div>
+          </div>
+          <div class="choosen-rank-third-player"></div>
+        </div>
+      </div>
+      <!-- input container end -->
+    </div>
+    <!-- container end -->
+    <script src="index.js"></script>
+  </body>
+</html>
